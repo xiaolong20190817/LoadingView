@@ -1,3 +1,20 @@
+### 使用方法
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
+dependencies {
+	        implementation 'com.github.xiaolong20190817:LoadingView:Tag'
+	}
+        
+        
+   在Application中初始化 
+   //初始化提示框  AppUtils.init(this);     
+        
+
 # LoadingView
 耗时加载框和提示框。
 
