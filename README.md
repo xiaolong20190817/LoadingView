@@ -1,21 +1,25 @@
 ### 使用方法
 
+```
 allprojects {
 	repositories {
 			...
 			maven { url 'https://jitpack.io' }
 		}
 	}
-	
+```	
 
+```
 implementation{
 	'com.github.xiaolong20190817:LoadingView:Tag'
 } 
-	
+```	
         
 在Application的onCreate中初始化
-//初始化提示框  AppUtils.init(this);    
-   
+```
+//初始化提示框
+AppUtils.init(this);
+```
 
 
 
