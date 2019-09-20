@@ -12,11 +12,7 @@ allprojects {
 	}
 	
 
-dependencies {
-
-	        implementation 'com.github.xiaolong20190817:LoadingView:Tag'
-		
-	}
+implementation 'com.github.xiaolong20190817:LoadingView:Tag'
 	
 
 
