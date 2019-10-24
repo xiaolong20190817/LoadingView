@@ -11,7 +11,7 @@ allprojects {
 
 ```
 implementation{
-	'com.github.xiaolong20190817:LoadingView:Tag'
+	'com.github.xiaolong20190817:LoadingView:1.1'
 } 
 ```	
         
