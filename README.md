@@ -10,9 +10,8 @@ allprojects {
 ```	
 
 ```
-implementation{
-	'com.github.xiaolong20190817:LoadingView:1.1'
-} 
+implementation 'com.github.xiaolong20190817:LoadingView:1.1'
+
 ```	
         
 在Application的onCreate中初始化
