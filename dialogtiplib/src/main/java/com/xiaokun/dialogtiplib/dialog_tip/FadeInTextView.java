@@ -6,6 +6,7 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.animation.LinearInterpolator;
 
 /**
@@ -125,7 +126,7 @@ public class FadeInTextView extends android.support.v7.widget.AppCompatTextView
                         }
                         setText(contentStr + stringBuffer.toString());
                     }catch (Exception e){
-
+                        Log.e("debug",e.getMessage());
                     }
 
 
