@@ -106,6 +106,9 @@ public class FadeInTextView extends android.support.v7.widget.AppCompatTextView
             public void onAnimationUpdate(ValueAnimator valueAnimator)
             {
                 int index = (int) valueAnimator.getAnimatedValue();
+                if(index >= arr.length){
+                    index = 0;
+                }
                 //过滤去重，保证每个字只重绘一次
                 if (currentIndex != index)
                 {
