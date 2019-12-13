@@ -1,5 +1,6 @@
 package com.xiaokun.dialogtiplib.util;
 
+import android.app.Activity;
 import android.content.Context;
 import android.util.DisplayMetrics;
 

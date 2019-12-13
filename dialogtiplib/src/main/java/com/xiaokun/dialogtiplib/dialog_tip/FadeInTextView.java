@@ -108,21 +108,27 @@ public class FadeInTextView extends android.support.v7.widget.AppCompatTextView
                 //过滤去重，保证每个字只重绘一次
                 if (currentIndex != index)
                 {
-                    stringBuffer.append(arr[index]);
-                    //重复动画使用append会造成内存泄漏
-                    // append(arr[index]);
+                    try{
+                        stringBuffer.append(arr[index]);
+                        //重复动画使用append会造成内存泄漏
+                        // append(arr[index]);
 
-                    currentIndex = index;
-                    //所有文字都显示完成之后进度回调结束动画
-                    if (currentIndex == (textCount - 1))
-                    {
-                        stringBuffer.setLength(0);
-                        if (textAnimationListener != null)
+                        currentIndex = index;
+                        //所有文字都显示完成之后进度回调结束动画
+                        if (currentIndex == (textCount - 1))
                         {
-                            textAnimationListener.animationFinish();
+                            stringBuffer.setLength(0);
+                            if (textAnimationListener != null)
+                            {
+                                textAnimationListener.animationFinish();
+                            }
                         }
+                        setText(contentStr + stringBuffer.toString());
+                    }catch (Exception e){
+
                     }
-                    setText(contentStr + stringBuffer.toString());
+
+
                 }
             }
         });
